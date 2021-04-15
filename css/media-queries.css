@@ -1,7 +1,7 @@
-@media screen and (max-width: 500px) {
-    div.nav-links {
-        display: contents;
-    }
+/*@media screen and (max-width: 500px) {*/
+/*    div.nav-links {*/
+/*        display: contents;*/
+/*    }*/
 
 
     * {
@@ -17,12 +17,11 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin: 1em;
+        padding: 1em;
     }
 
     .alert-info {
         background: aqua;
-        width: 100%;
         display: flex;
         justify-content: center;
         padding:1em;
@@ -41,7 +40,6 @@
 
     li {
         background: lightgrey;
-        width: 100%;
         display: flex;
         justify-content: center;
         padding: 1em;
@@ -57,49 +55,59 @@
         margin: 1em;
         padding: 1em;
     }
-}
-.alert-info {
-    visibility: hidden;
-}
+/*}*/
+@media screen and (min-width: 670px) {
 
-h1 {
-    font-size: 3em;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-}
+    .alert-info {
+        visibility: hidden;
+        position: absolute;
+    }
 
-.nav-links {
-    display: flex;
-    list-style: none;
-    padding: 1px;
-    margin: 2em;
-    flex-basis: 100%;
-    align-items: center;
-    justify-content: flex-end;
-}
-li{
-    padding:2px 8px;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-html {
-    width: 100%;
-    display: flex;
+    body {
+        display: flex;
+        /*justify-content: center;*/
+        flex-direction: column;
+    }
 
-    justify-content: center;
-    margin: 1em;
-}
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
 
-section {
-    display: flex;
-    flex-direction: row;
-    padding:0 0 10em 2em;
+    h1 {
+        font-size: 2.5em;
+        margin: .5em;
+    }
 
-}
-.main {
-    flex-direction: column;
-}
-.sub-section {
-    flex-direction: column;
+    h2 {
+        padding-bottom: 1em;
+    }
+
+    .nav-links {
+        text-decoration: none;
+        display: flex;
+        flex-basis: 100%;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    li {
+        background-color: white;
+        padding: 0;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    #content {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main {
+        width: 70%;
+    }
+
+    .sub-section {
+        width: 30%;
+    }
 }
