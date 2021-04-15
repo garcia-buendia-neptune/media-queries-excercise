@@ -2,57 +2,104 @@
     div.nav-links {
         display: contents;
     }
+
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'works sans', sans-serif;
+    }
+
+
+    body .header-img {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 1em;
+    }
+
+    .alert-info {
+        background: aqua;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding:1em;
+        margin: 1em;
+    }
+
+    h1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav-links {
+        width: 100%;
+        display: inline-block;
+    }
+
+    li {
+        background: lightgrey;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 1em;
+        margin: 1em;
+    }
+
+    section {
+        margin: 1em;
+        padding: 1em;
+    }
+
+    footer {
+        margin: 1em;
+        padding: 1em;
+    }
 }
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'works sans' , sans-serif;
-}
-
-
-body {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-
-.alert-info{
-    background: aqua;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 1em;
-    margin:1em;
+.alert-info {
+    visibility: hidden;
 }
 
 h1 {
-    display: flex;
-    justify-content: center;
+    font-size: 3em;
+    padding: 0;
+    margin: 0;
+    position: absolute;
 }
 
 .nav-links {
-    width: 100%;
-    display: inline-block;
+    display: flex;
+    list-style: none;
+    padding: 1px;
+    margin: 2em;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: flex-end;
 }
-
-li {
-    background: lightgrey;
+li{
+    padding:2px 8px;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+html {
     width: 100%;
     display: flex;
+
     justify-content: center;
-    padding: 1em;
-    margin:1em;
+    margin: 1em;
 }
 
 section {
-    margin: 1em;
-    padding: 1em;
-}
+    display: flex;
+    flex-direction: row;
+    padding:0 0 10em 2em;
 
-footer {
-    margin: 1em;
-    padding: 1em;
+}
+.main {
+    flex-direction: column;
+}
+.sub-section {
+    flex-direction: column;
 }
