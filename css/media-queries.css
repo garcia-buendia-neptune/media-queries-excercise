@@ -1,10 +1,7 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
     div.nav-links {
         display: contents;
     }
-}
-#main, .sub-section {
-    display: inline-block;
 }
 
 * {
@@ -14,12 +11,21 @@
     font-family: 'works sans' , sans-serif;
 }
 
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
 .alert-info{
-    background: #6ce1ff;
-    position: center;
+    background: aqua;
     width: 100%;
     display: flex;
     justify-content: center;
+    padding: 1em;
+    margin:1em;
 }
 
 h1 {
@@ -34,10 +40,19 @@ h1 {
 
 li {
     background: lightgrey;
-    position: center;
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 3px;
+    padding: 1em;
     margin:1em;
+}
+
+section {
+    margin: 1em;
+    padding: 1em;
+}
+
+footer {
+    margin: 1em;
+    padding: 1em;
 }
