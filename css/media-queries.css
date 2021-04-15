@@ -110,4 +110,14 @@
     .sub-section {
         width: 30%;
     }
+
+    #footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    #social-media-links {
+        font-size: 2.3em;
+
+    }
 }
+
