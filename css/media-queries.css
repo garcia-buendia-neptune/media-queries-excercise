@@ -55,6 +55,15 @@
         margin: 1em;
         padding: 1em;
     }
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    padding-bottom: 1em;
+}
 /*}*/
 @media screen and (min-width: 670px) {
 
