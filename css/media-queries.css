@@ -130,3 +130,8 @@ h2 {
     }
 }
 
+.fab {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
